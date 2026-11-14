@@ -1,0 +1,18 @@
+$ python moqueca.py "resultado = (4 + 2) * 3;"
+Entrada: resultado = (4 + 2) * 3;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'resultado'  1:1
+  2  ATRIB          '='          1:11
+  3  ABRE_PAR       '('          1:13
+  4  NUM_INT        '4'          1:14
+  5  OP_SOMA        '+'          1:16
+  6  NUM_INT        '2'          1:18
+  7  FECHA_PAR      ')'          1:19
+  8  OP_MUL         '*'          1:21
+  9  NUM_INT        '3'          1:23
+ 10  PONTO_VIRG     ';'          1:24
+ 11  EOF            ''           1:25
+
+Nenhum erro lexico encontrado.

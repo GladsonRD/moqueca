@@ -1,0 +1,13 @@
+$ python moqueca.py "mostre preco * 1.5; # exibe o preco"
+Entrada: mostre preco * 1.5; # exibe o preco
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  PAL_RESERVADA  'mostre'     1:1
+  2  IDENT          'preco'      1:8
+  3  OP_MUL         '*'          1:14
+  4  NUM_REAL       '1.5'        1:16
+  5  PONTO_VIRG     ';'          1:19
+  6  EOF            ''           1:36
+
+Nenhum erro lexico encontrado.

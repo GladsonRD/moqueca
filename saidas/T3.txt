@@ -1,0 +1,20 @@
+$ python moqueca.py "media = nota1 + nota2 * peso - 10 / 2;"
+Entrada: media = nota1 + nota2 * peso - 10 / 2;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'media'      1:1
+  2  ATRIB          '='          1:7
+  3  IDENT          'nota1'      1:9
+  4  OP_SOMA        '+'          1:15
+  5  IDENT          'nota2'      1:17
+  6  OP_MUL         '*'          1:23
+  7  IDENT          'peso'       1:25
+  8  OP_SUB         '-'          1:30
+  9  NUM_INT        '10'         1:32
+ 10  OP_DIV         '/'          1:35
+ 11  NUM_INT        '2'          1:37
+ 12  PONTO_VIRG     ';'          1:38
+ 13  EOF            ''           1:39
+
+Nenhum erro lexico encontrado.

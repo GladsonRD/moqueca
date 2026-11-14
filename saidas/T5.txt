@@ -1,0 +1,13 @@
+$ python moqueca.py "nota = 7,5;"
+Entrada: nota = 7,5;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'nota'       1:1
+  2  ATRIB          '='          1:6
+  3  NUM_INT        '7'          1:8
+  4  NUM_INT        '5'          1:10
+  5  PONTO_VIRG     ';'          1:11
+  6  EOF            ''           1:12
+
+Erro lexico: caractere desconhecido ',' na linha 1, coluna 9

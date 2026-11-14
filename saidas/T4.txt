@@ -1,0 +1,13 @@
+$ python moqueca.py "total = 10 $ 5;"
+Entrada: total = 10 $ 5;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'total'      1:1
+  2  ATRIB          '='          1:7
+  3  NUM_INT        '10'         1:9
+  4  NUM_INT        '5'          1:14
+  5  PONTO_VIRG     ';'          1:15
+  6  EOF            ''           1:16
+
+Erro lexico: caractere desconhecido '$' na linha 1, coluna 12

@@ -1,0 +1,35 @@
+$ python moqueca.py --arquivo exemplo.mq
+Entrada: # programa de exemplo em Moqueca
+base = 8;
+altura = 5;
+area = (base + 2) * altura / 4;
+mostre area;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'base'       2:1
+  2  ATRIB          '='          2:6
+  3  NUM_INT        '8'          2:8
+  4  PONTO_VIRG     ';'          2:9
+  5  IDENT          'altura'     3:1
+  6  ATRIB          '='          3:8
+  7  NUM_INT        '5'          3:10
+  8  PONTO_VIRG     ';'          3:11
+  9  IDENT          'area'       4:1
+ 10  ATRIB          '='          4:6
+ 11  ABRE_PAR       '('          4:8
+ 12  IDENT          'base'       4:9
+ 13  OP_SOMA        '+'          4:14
+ 14  NUM_INT        '2'          4:16
+ 15  FECHA_PAR      ')'          4:17
+ 16  OP_MUL         '*'          4:19
+ 17  IDENT          'altura'     4:21
+ 18  OP_DIV         '/'          4:28
+ 19  NUM_INT        '4'          4:30
+ 20  PONTO_VIRG     ';'          4:31
+ 21  PAL_RESERVADA  'mostre'     5:1
+ 22  IDENT          'area'       5:8
+ 23  PONTO_VIRG     ';'          5:12
+ 24  EOF            ''           6:1
+
+Nenhum erro lexico encontrado.

@@ -1,0 +1,37 @@
+$ python moqueca.py --ast --tac "area = (base + 2) * altura / 4;"
+Entrada: area = (base + 2) * altura / 4;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'area'       1:1
+  2  ATRIB          '='          1:6
+  3  ABRE_PAR       '('          1:8
+  4  IDENT          'base'       1:9
+  5  OP_SOMA        '+'          1:14
+  6  NUM_INT        '2'          1:16
+  7  FECHA_PAR      ')'          1:17
+  8  OP_MUL         '*'          1:19
+  9  IDENT          'altura'     1:21
+ 10  OP_DIV         '/'          1:28
+ 11  NUM_INT        '4'          1:30
+ 12  PONTO_VIRG     ';'          1:31
+ 13  EOF            ''           1:32
+
+Nenhum erro lexico encontrado.
+
+AST:
+= (atribuicao)
+├── area
+└── /
+    ├── *
+    │   ├── +
+    │   │   ├── base
+    │   │   └── 2
+    │   └── altura
+    └── 4
+
+Codigo de tres enderecos:
+t1 = base + 2
+t2 = t1 * altura
+t3 = t2 / 4
+area = t3

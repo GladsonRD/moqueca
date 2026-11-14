@@ -1,0 +1,19 @@
+$ python moqueca.py "x = (4 + * 2;" --ast
+Entrada: x = (4 + * 2;
+
+  #  TIPO           LEXEMA       LIN:COL
+------------------------------------------
+  1  IDENT          'x'          1:1
+  2  ATRIB          '='          1:3
+  3  ABRE_PAR       '('          1:5
+  4  NUM_INT        '4'          1:6
+  5  OP_SOMA        '+'          1:8
+  6  OP_MUL         '*'          1:10
+  7  NUM_INT        '2'          1:12
+  8  PONTO_VIRG     ';'          1:13
+  9  EOF            ''           1:14
+
+Nenhum erro lexico encontrado.
+Erro sintatico: esperado numero, identificador, '(' ou '-' (encontrado '*' na linha 1, coluna 10)
+
+AST e codigo intermediario nao gerados: corrija os erros acima.
